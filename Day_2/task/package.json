@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "json5": "^2.2.0",
+    "webpack": "^5.53.0"
+  }
+}

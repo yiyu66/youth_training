@@ -1,0 +1,21 @@
+{
+  "name": "01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src"
+  },
+  "husty": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^7.0.2"
+  }
+}
