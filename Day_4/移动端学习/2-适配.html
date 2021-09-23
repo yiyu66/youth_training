@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport 移动端特有设置，解决移动端屏幕过小问题 -->
+    <!-- 当不设置为viewport时，视口大小默认为980 -->
+    <script>
+        (function () {
+            var metaEl = document.createElement('meta');
+            var scale = devicePixelRatio;
+            metaEl.setAttribute('name', 'viewport');
+            metaEl.setAttribute('content', 'initial-scale=' + (1 / scale) + ', maximum-scale=' + (1 / scale) + ', minimum-scale=' + (1 / scale) + ', user-scalable=no');
+            document.documentElement.firstElementChild.appendChild(metaEl);
+        })();
+        (function () {
+            var doc = document.documentElement
+            doc.style.fontSize = window.innerWidth / 15 + "px"
+        })
+    </script>
+    <title>Document</title>
+    <!-- 比例单位，百分比、rem、vw 
+    1rem = 1root(html)  font-size
+    屏幕尺寸的1/15   
+    -->
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #box {
+            display: flex;
+        }
+
+        #box div {
+            width: 6.96rem;
+            height: 3.6rem;
+            background-color: red;
+            margin: 0 0.2rem;
+            font-size: .64rem;
+        }
+    </style>
+    <script>
+        console.log(window.devicePixelRatio); //像素比
+        // 像素比 原先1px的内容，放大到devicePixelRatio px显示
+    </script>
+</head>
+
+<body>
+    <div id="box">
+        <div>件货抽签</div>
+        <div>新品日历</div>
+    </div>
+</body>
+
+</html>
