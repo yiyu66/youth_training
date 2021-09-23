@@ -1,0 +1,28 @@
+.inputClass {
+  width: 100px;
+  margin-left: 20px;
+}
+#biglogo img {
+  width: 500px;
+}
+
+#biglogo {
+
+  position: relative;
+  margin-top: 191px;
+}
+
+#dot {
+  position: absolute;
+  top: -5px;
+  left: 364px;
+}
+#btns Button {
+  margin-top: 270px;
+  margin-right: 20px;
+}
+
+.banner-qr{
+    margin-top: 250px;
+    /* width: 20px; */
+}
